@@ -2,6 +2,7 @@ import requests
 import RPi.GPIO as GPIO
 import time
 import sys
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -30,10 +31,11 @@ while True:
         if LastStatus != RED_SwitchStatus:         
             if RED_SwitchStatus == 1:
                 print("Red button LINE send")
+                print(os.environ['LINE_NOTIFY_TOKEN'])
                 
                 #LINE notify
-                url = process.env.LINE_NOTIFY_URL
-                token = process.env.LINE_NOTIFY_TOKEN
+                url = 'https://notify-api.line.me/api/notify'
+                token = os.environ['LINE_NOTIFY_TOKEN']
                 headers = {"Authorization" : "Bearer "+ token} 
                 message =  "Red button pushed!!" 
                 payload = {"message" :  message} 
@@ -45,8 +47,8 @@ while True:
                 print("Blue button LINE send")
                 
                 #LINE notify
-                url = process.env.LINE_NOTIFY_URL
-                token = process.env.LINE_NOTIFY_TOKEN
+                url = 'https://notify-api.line.me/api/notify'
+                token = os.environ['LINE_NOTIFY_TOKEN']
                 headers = {"Authorization" : "Bearer "+ token} 
                 message =  "Blue button pushed!!" 
                 payload = {"message" :  message} 
