@@ -31,7 +31,6 @@ while True:
         if LastStatus != RED_SwitchStatus:         
             if RED_SwitchStatus == 1:
                 print("Red button LINE send")
-                print(os.environ['LINE_NOTIFY_TOKEN'])
                 
                 #LINE notify
                 url = 'https://notify-api.line.me/api/notify'
