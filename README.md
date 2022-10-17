@@ -2,6 +2,9 @@
 
 This is notification system using LINE Notify and Raspberry Pi.
 The notification.py is the code to execute on Raspberry Pi. The system should be connecting to internet.
+
+![](https://img.shields.io/github/languages/code-size/khiz125/notification_with_raspberry_pi)
+![](https://img.shields.io/badge/-Python-3776AB.svg?logo=python&style=plastic)
  
 ## Note
 
@@ -12,9 +15,7 @@ LINE_NOTIFY_TOKEN=<Your token here>
 
 This code set 2 buttons for message.
 "message" variable in the while loop is the text the Raspberry Pi sends.
- 
-![](https://img.shields.io/github/languages/code-size/khiz125/notification_with_raspberry_pi)
-![](https://img.shields.io/badge/-Python-3776AB.svg?logo=python&style=plastic)
+
 
 ## Tools for Raspberry Pi
 ![tools](https://user-images.githubusercontent.com/88763635/187067591-0f6cbc53-b107-4581-9d26-9c5bc3edfe18.png)
