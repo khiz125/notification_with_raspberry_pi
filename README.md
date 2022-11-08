@@ -3,6 +3,8 @@
 This is notification system using LINE Notify and Raspberry Pi.
 The notification.py is the code to execute on Raspberry Pi. The system should be connecting to internet.
 
+![Concept of the product](https://user-images.githubusercontent.com/88763635/200482840-ea53e067-ca3a-4514-b514-38f89695f2b6.png)
+
 ![](https://img.shields.io/github/languages/code-size/khiz125/notification_with_raspberry_pi)
 ![](https://img.shields.io/badge/-Python-3776AB.svg?logo=python&style=plastic)
 
